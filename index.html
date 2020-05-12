@@ -16,49 +16,74 @@
 <body>
     <nav>
         <div class="nav-wrapper" style="background-color: #74112b; padding: 0px 30px;">
-            <a href="https://github.com/21819243/Prime-and-composite-numbers" class="brand-logo">Prime and Composite Numbers</a
-        >
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li>
-            <a href="#">Github Page</a>
-            </li>
-            </ul>
-        </div>
+            <a href="#" class="brand-logo">Prime and Composite Numbers</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="https://github.com/21819243/Prime-and-composite-numbers">Github Page</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="row text-center" style="padding-top: 50px;">
-        <div class="col s3"></div>
-        <div class="col s6">
-            <div class="col s2"></div>
-            <div class="col s8">
-                <div class="row">
-                    <div class="input-field col s12" style="margin-top: 50px !important;">
-                        <input id="selected_number" type="number" min="2" max="1000" value="0" class="validate" />
-                        <label for="selected_number">Select a number</label>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 50px !important;">
-                    <div class="col s4"></div>
-                    <div class="col s4">
-                        <button class="btn waves-effect waves-light" style="background-color: #74112b;" name="calcButton" id="calcButton" onclick="primalityTest()">
+      <div class="col s3"></div>
+      <div class="col s6">
+        <div class="col s2"></div>
+        <div class="col s8">
+          <div class="row">
+            <div
+              class="input-field col s12"
+              style="margin-top: 50px !important;"
+            >
+              <input
+                id="selected_number"
+                type="number"
+                min="2"
+                max="1000"
+                value="0"
+                class="validate"
+              />
+              <label for="selected_number">Select a number</label>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 50px !important;">
+            <div class="col s4"></div>
+            <div class="col s4">
+              <button
+                class="btn waves-effect waves-light"
+                style="background-color: #74112b;"
+                name="calcButton"
+                id="calcButton"
+                onclick="primalityTest()"
+              >
                 SHOW RESULT
                 <i class="material-icons right"></i>
               </button>
-                    </div>
-                    <div class="col s4"></div>
-                </div>
-
-                <div class="row" style="text-align: center !important;">
-                    <div class="input-field col s12" style="margin-top: 50px !important;" id="result">
-                        <input placeholder="Result will be displayed here..." id="result1" type="text" class="validate" disabled />
-                        <label for="result1">Result</label>
-                    </div>
-                </div>
             </div>
-            <div class="col s2"></div>
-        </div>
-        <div class="col s3"></div>
-    </div>
-</body>
+            <div class="col s4"></div>
+          </div>
 
+          <div class="row" style="text-align: center !important;">
+            <div
+              class="input-field col s12"
+              style="margin-top: 50px !important;"
+              id="result"
+            >
+              <input
+                placeholder="Result will be displayed here..."
+                id="result1"
+                type="text"
+                class="validate"
+                disabled
+              />
+              <label for="result1">Result</label>
+            </div>
+          </div>
+        </div>
+        <div class="col s2"></div>
+      </div>
+      <div class="col s3"></div>
+    </div>
+  </body>
 </html>
