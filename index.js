@@ -1,9 +1,7 @@
 // Project Github Link: https://github.com/21819243/Prime-and-composite-numbers
 function primalityTest() {
     var selectedNumber = document.getElementById("selected_number").value;
-    var limitedValue = Math.floor(
-        Math.sqrt(document.getElementById("selected_number").value)
-    );
+
     var i;
     var count = 0;
     var iteration = 0;
@@ -58,8 +56,6 @@ function primalityTest() {
             "<strong>Number of Iteration (2.Method): </strong>  " +
             sieveAlgortihmPrime(selectedNumber) +
             "<br>";
-        document.getElementById("result").innerHTML +=
-            "<strong>Dividers: </strong>  " + numFactors(selectedNumber);
     } else {
         document.getElementById("result").innerHTML =
             "<strong>Prime/Composite: </strong> Composite Number" + "<br>";
@@ -71,7 +67,8 @@ function primalityTest() {
             "<strong>Number of Iteration (2.Method): </strong>  " +
             sieveAlgortihmComposite(selectedNumber) +
             "<br>";
-        document.getElementById("result").innerHTML +=
-            "<strong>Dividers: </strong>  " + numFactors(selectedNumber);
     }
+
+    document.getElementById("result").innerHTML +=
+        "<strong>Dividers: </strong>  " + numFactors(selectedNumber);
 }
