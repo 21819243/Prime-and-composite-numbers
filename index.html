@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                 <div class="row" style="margin-top: 50px !important;">
                     <div class="col s4"></div>
                     <div class="col s4">
-                        <button class="btn waves-effect waves-light" style="background-color: #74112b;" name="calcButton" id="calcButton">
+                        <button class="btn waves-effect waves-light" style="background-color: #74112b;" name="calcButton" id="calcButton" onclick="method1()">
                 SHOW RESULT
                 <i class="material-icons right"></i>
               </button>
@@ -48,9 +49,9 @@
                 </div>
 
                 <div class="row">
-                    <div class="input-field col s12" style="margin-top: 50px !important;">
-                        <input placeholder="Result will be displayed here..." id="result" type="text" class="validate" disabled />
-                        <label for="result">Result</label>
+                    <div class="input-field col s12" style="margin-top: 50px !important;" id="result">
+                        <input placeholder="Result will be displayed here..." id="result1" type="text" class="validate" disabled />
+                        <label for="result1">Result</label>
                     </div>
                 </div>
             </div>
